@@ -1,0 +1,69 @@
+{
+    "canIpForward": false,
+    "cpuPlatform": "Intel Haswell",
+    "creationTimestamp": "2021-02-15T14:13:27.327-08:00",
+    "deletionProtection": false,
+    "disks": [
+      {
+        "autoDelete": true,
+        "boot": true,
+        "deviceName": "persistent-disk-0",
+        "diskSizeGb": "10",
+        "guestOsFeatures": [
+          {
+            "type": "VIRTIO_SCSI_MULTIQUEUE"
+          }
+        ],
+        "index": 0,
+        "interface": "SCSI",
+        "kind": "compute#attachedDisk",
+        "licenses": [
+          "projects/debian-cloud/global/licenses/debian-9-stretch"
+        ],
+        "mode": "READ_WRITE",
+        "source": "projects/vast-art-304421/zones/us-central1-a/disks/edge-case-alejandro-marin",
+        "type": "PERSISTENT"
+      }
+    ],
+    "fingerprint": "-3O3v122vw8=",
+    "id": "1517472160019860713",
+    "kind": "compute#instance",
+    "labelFingerprint": "42WmSpB8rSM=",
+    "lastStartTimestamp": "2021-02-15T14:13:34.039-08:00",
+    "machineType": "projects/vast-art-304421/zones/us-central1-a/machineTypes/n1-standard-1",
+    "metadata": {
+      "fingerprint": "zGyc1L965f8=",
+      "kind": "compute#metadata"
+    },
+    "name": "edge-case-alejandro-marin",
+    "networkInterfaces": [
+      {
+        "fingerprint": "HD-f2-9O5Xc=",
+        "kind": "compute#networkInterface",
+        "name": "nic0",
+        "network": "projects/vast-art-304421/global/networks/default",
+        "networkIP": "10.128.0.14",
+        "subnetwork": "projects/vast-art-304421/regions/us-central1/subnetworks/default"
+      }
+    ],
+    "scheduling": {
+      "automaticRestart": true,
+      "onHostMaintenance": "MIGRATE",
+      "preemptible": false
+    },
+    "selfLink": "projects/vast-art-304421/zones/us-central1-a/instances/edge-case-alejandro-marin",
+    "serviceAccounts": [
+      {
+        "email": "edge-instance-alejandro-marin@vast-art-304421.iam.gserviceaccount.com",
+        "scopes": [
+          "https://www.googleapis.com/auth/cloud-platform"
+        ]
+      }
+    ],
+    "startRestricted": false,
+    "status": "RUNNING",
+    "tags": {
+      "fingerprint": "42WmSpB8rSM="
+    },
+    "zone": "projects/vast-art-304421/zones/us-central1-a"
+  }
