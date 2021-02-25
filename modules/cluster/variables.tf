@@ -87,3 +87,6 @@ variable "metering" {
   type        = map(string)
   default     = null
 }
+
+variable pods     {}
+variable services {}

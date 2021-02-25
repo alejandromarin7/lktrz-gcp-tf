@@ -35,8 +35,8 @@ resource "google_container_cluster" "gke_cluster" {
 
   ip_allocation_policy {
     # use_ip_aliases = true # Deprecated as for 3.0.0 google provider
-    services_secondary_range_name = "services"
-    cluster_secondary_range_name  = "pods"
+    services_secondary_range_name = "${var.services}"
+    cluster_secondary_range_name  = "${var.pods}"
   }
   private_cluster_config {
     master_ipv4_cidr_block  = var.master_ipv4_cidr_block
